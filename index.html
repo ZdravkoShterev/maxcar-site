@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAXCAR – Автокъща Пловдив | Внос, лизинг, гаранция</title>
+<meta name="description" content="MAXCAR Пловдив: автомобили от Германия, Австрия, Дания и Чехия. Гаранция 6 месеца или 10 000 км, безплатно обслужване, безплатна доставка, лизинг. Тел. 089 5555335.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@1,100..125,700..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css?v=14">
+</head>
+<body data-page="home">
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="logo" href="index.html" aria-label="MAXCAR"><img src="assets/logo-white.png" alt="MAXCAR" width="900" height="140"></a>
+    <nav class="nav__links" id="nav">
+      <a href="cars.html">Автомобили</a>
+      <a href="#warranty">Гаранция</a>
+      <a href="#leasing">Лизинг</a>
+      <a href="#sell">Изкупуване</a>
+      <a href="#faq">Въпроси</a>
+      <a href="#about">За нас</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+    <a class="btn btn--red nav__cta" href="tel:+359895555335">📞 089 5555335</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__bg" id="heroBg"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Автокъща · Пловдив</p>
+    <h1>Колата, която търсиш.<br><em>Без скрити проблеми.</em></h1>
+    <ul class="perks">
+      <li><span>🔧</span>Безплатно обслужване</li>
+      <li><span>🛡️</span>Гаранция 10 000 км или 6 месеца</li>
+      <li><span>🚚</span>Безплатна доставка</li>
+      <li><span>🤝</span>Пълно съдействие</li>
+      <li><span>🛞</span>Подарък гуми</li>
+    </ul>
+    <div class="hero__cta">
+      <a class="btn btn--red" href="cars.html">Виж автомобилите</a>
+      <a class="btn btn--ghost" href="tel:+359895555335">Обади се сега</a>
+    </div>
+    <ul class="stats">
+      <li><b id="statCars">42</b><span>коли в наличност</span></li>
+      <li><b>385K</b><span>харесвания в TikTok</span></li>
+      <li><b>27K</b><span>последователи</span></li>
+      <li><b>6 мес.</b><span>гаранция</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="promo">
+  <div class="wrap promo__in">
+    <span class="tag">🛞 Промоция</span>
+    <p><b>Безплатен комплект гуми</b> при покупка до 31.12 · <b>Гаранция</b> · <b>Безплатно обслужване</b> · <b>Безплатна доставка</b></p>
+  </div>
+</div>
+
+<div class="trust"><div class="wrap trust__in">
+  <span>✔ Реални километри</span><span>✔ VIN и сервизна история</span><span>✔ Гаранция на всяка кола</span><span>✔ Собствен лизинг</span><span>✔ Безплатна доставка</span>
+</div></div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">От наличните</p>
+      <h2>Избрани автомобили</h2>
+    </div>
+    <div class="grid" id="featGrid"></div>
+    <div class="feat__more"><a class="btn btn--red" href="cars.html">Всички автомобили (<span id="statCars2">42</span>) →</a></div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="browse">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Бърз избор</p>
+      <h2>Намери <em>своята кола</em></h2>
+    </div>
+    <h3 class="sub">По тип автомобил</h3>
+    <div class="tiles" id="typeTiles"></div>
+    <h3 class="sub">По марка</h3>
+    <div class="chips" id="brandChips"></div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="warranty">
+  <div class="wrap big">
+    <div>
+      <p class="eyebrow">Гаранция</p>
+      <div class="num">6 месеца<small>или 10 000 км</small></div>
+    </div>
+    <div>
+      <h2>Гаранцията покрива <em>всичко</em></h2>
+      <p class="lead">Всеки автомобил от MAXCAR идва с гаранция 6 месеца или 10 000 км. Тя покрива всички повреди, освен естественото износване на частите.</p>
+      <ul class="ticks">
+        <li>Покрити са всички агрегати и системи</li>
+        <li>Не се покрива само естественото износване на частите</li>
+        <li>Важи за всеки автомобил в наличност</li>
+      </ul>
+      <a class="btn btn--red" href="tel:+359895555335">Попитай за гаранцията</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="service">
+  <div class="wrap big big--rev">
+    <div>
+      <p class="eyebrow">Обслужване</p>
+      <h2>Безплатно <em>обслужване</em></h2>
+      <p class="lead">Към всяка покупка получаваш безплатно обслужване. Така започваш да караш колата си спокойно, без неочаквани разходи в началото.</p>
+      <ul class="ticks">
+        <li>Безплатно обслужване към покупката</li>
+        <li>Сервизна история и VIN номер за проверка</li>
+        <li>Напълно обслужени автомобили от нов внос</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Какво получаваш</h3>
+      <div class="cards cards--mini">
+        <article><i>🔧</i><h3>Сервизна история</h3><p>Всяка кола е със сервизна книжка и VIN.</p></article>
+        <article><i>🎁</i><h3>Безплатно обслужване</h3><p>Получаваш го към всяка покупка.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="assist">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Съдействие</p>
+      <h2>Пълно съдействие <em>при покупка</em></h2>
+      <p class="lead">Ти избираш колата, а ние се грижим за останалото: от първия разговор до предаването на ключовете.</p>
+    </div>
+    <ol class="steps steps--grid">
+      <li><div><b>Избираш автомобил</b>Разглеждаш наличностите или ни казваш какво търсиш.</div></li>
+      <li><div><b>Проверка и документи</b>Получаваш VIN, сервизна история и всички документи за проверка.</div></li>
+      <li><div><b>Финансиране</b>Собствен лизинг, бартер или изкупуване на твоята кола.</div></li>
+      <li><div><b>Регистрация</b>Съдействаме ти при регистрацията на автомобила.</div></li>
+      <li><div><b>Доставка</b>Автомобилът идва при теб безплатно, където и да си в България.</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="delivery">
+  <div class="wrap big">
+    <div>
+      <p class="eyebrow">Доставка</p>
+      <h2>Безплатна доставка <em>из цялата страна</em></h2>
+      <p class="lead">Далеч си от Пловдив? Не е проблем. Доставяме автомобила до теб безплатно, където и да се намираш в България.</p>
+      <a class="btn btn--red" href="tel:+359895555335">Уточни доставката</a>
+    </div>
+    <div class="panel">
+      <div class="num num--sm">Безплатно<small>доставка до всяка точка</small></div>
+      <p class="lead" style="margin:14px 0 0">Огледай колата на снимки и видео, а ние ще я докараме до теб.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="leasing">
+  <div class="wrap big">
+    <div>
+      <p class="eyebrow">Собствен лизинг</p>
+      <h2>Колата е твоя с<br><em>малка първоначална вноска</em></h2>
+      <p class="lead">Собствен лизинг директно от автокъщата, без банки. Първоначалната вноска и месечните плащания зависят от автомобила. Обади се и ще ти направим конкретна сметка.</p>
+      <ul class="ticks">
+        <li>Преценка без задължение</li>
+        <li>Гаранция и при покупка на лизинг</li>
+        <li>Бартер на твоята кола като първоначална вноска</li>
+      </ul>
+      <a class="btn btn--red" href="tel:+359895555335">Поискай оферта · 089 5555335</a>
+    </div>
+    <div class="leasing__img" id="leasingImg" role="img" aria-label="Автомобил от MAXCAR"></div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="sell">
+  <div class="wrap big big--rev">
+    <div>
+      <p class="eyebrow">Изкупуване и бартер</p>
+      <h2>Продай или смени <em>колата си</em></h2>
+      <p class="lead">Изкупуваме автомобили и приемаме твоята кола на бартер като първоначална вноска за нова. Изпрати ни данните и ще ти кажем какво можем да предложим.</p>
+      <div class="hero__cta">
+        <a class="btn btn--red" target="_blank" rel="noopener" href="https://wa.me/359895555335?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D0%B5%D0%B9%D1%82%D0%B5%2C%20%D0%B8%D1%81%D0%BA%D0%B0%D0%BC%20%D0%B4%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%BC%20%D0%B8%D0%BB%D0%B8%20%D1%81%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BA%D0%BE%D0%BB%D0%B0%D1%82%D0%B0%20%D1%81%D0%B8.%20%D0%9C%D0%B0%D1%80%D0%BA%D0%B0%2C%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%2C%20%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B1%D0%B5%D0%B3%3A%20">Изпрати данни по WhatsApp</a>
+        <a class="btn btn--ghost" href="tel:+359895555335">Обади се</a>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Какво да ни изпратиш</h3>
+      <ol class="steps">
+        <li><div><b>Основни данни</b>Марка, модел, година, пробег и гориво.</div></li>
+        <li><div><b>Снимки</b>Няколко снимки отвън и отвътре.</div></li>
+        <li><div><b>Очаквана цена</b>Колко искаш за колата или с какво я заменяш.</div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap big">
+    <div class="leasing__img" id="aboutImg" role="img" aria-label="Автокъща MAXCAR"></div>
+    <div>
+      <p class="eyebrow">За нас</p>
+      <h2>MAXCAR – <em>автокъща в Пловдив</em></h2>
+      <p class="lead" style="margin-bottom:14px">MAXCAR е автокъща в Пловдив за внос и продажба на автомобили от Германия, Австрия, Дания и Чехия. Колите са с реални километри, сервизна история и без скрити проблеми.</p>
+      <p class="lead" style="margin-top:0">Показваме колите открито, във видеа и обзори в TikTok и Instagram. Над 27 000 души ни следват и виждат какво купуват още преди да дойдат.</p>
+      <div class="about__stats">
+        <div><b>42</b><span>коли в наличност</span></div>
+        <div><b>27K</b><span>последователи</span></div>
+        <div><b>385K</b><span>харесвания</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Отзиви</p>
+      <h2>Какво казват <em>клиентите</em></h2>
+    </div>
+    <div class="revs">
+      <figure class="rev">
+        <div class="rev__top"><span class="rev__src rev__src--g">Google</span><span class="stars">★★★★★</span></div>
+        <blockquote>„Най-добрият автокъща. Имах много приятно преживяване, купувайки кола от тях.“</blockquote>
+        <figcaption><b>Mihaela L.</b><span>Отзив в Google · купила кола от MAXCAR</span></figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="rev__top"><span class="rev__src rev__src--f">Facebook</span><span class="rev__rec">👍 Препоръчва</span></div>
+        <blockquote>„Изключително коректни. Препоръчвам!“</blockquote>
+        <figcaption><b>Румен Г.</b><span>Препоръка във Facebook · май 2026</span></figcaption>
+      </figure>
+    </div>
+    <div class="revs__links">
+      <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/place/?q=place_id:ChIJc-SqDQDTrBQR4wcTu1ix7gs">Всички отзиви в Google</a>
+      <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://www.facebook.com/maxcar.automobile/reviews">Отзиви във Facebook</a>
+      <a class="btn btn--red" target="_blank" rel="noopener" href="https://search.google.com/local/writereview?placeid=ChIJc-SqDQDTrBQR4wcTu1ix7gs">Остави отзив</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="faq">
+  <div class="wrap faqwrap">
+    <div class="sec__head">
+      <p class="eyebrow">Въпроси</p>
+      <h2>Често <em>задавани въпроси</em></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Каква е гаранцията?</summary><p>Всеки автомобил е с гаранция 6 месеца или 10 000 км. Тя покрива всички повреди, освен естественото износване на частите.</p></details>
+      <details><summary>Километрите реални ли са?</summary><p>Да. Внасяме автомобили от Германия, Австрия, Дания и Чехия и даваме VIN номер и сервизна история, за да ги провериш сам.</p></details>
+      <details><summary>Как работи лизингът?</summary><p>Предлагаме собствен лизинг директно от автокъщата. Първоначалната вноска и месечните плащания зависят от автомобила. Обади се и ще ти направим конкретна сметка.</p></details>
+      <details><summary>Приемате ли стара кола на бартер?</summary><p>Да. Приемаме бартер и изкупуваме автомобили. Изпрати ни данните за колата си и ще ти кажем какво можем да предложим.</p></details>
+      <details><summary>Колко струва доставката?</summary><p>Доставката е безплатна до всяка точка на България.</p></details>
+      <details><summary>Помагате ли с регистрацията?</summary><p>Да, съдействаме ти при регистрацията на автомобила.</p></details>
+      <details><summary>Мога ли да огледам колата на живо?</summary><p>Разбира се. Намираме се в Пловдив, бул. „Васил Левски“ 246. Обади се предварително, за да сме сигурни, че колата те чака.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="social">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Следвай ни</p>
+      <h2>Виж колите на живо</h2>
+    </div>
+    <div class="soc">
+      <a class="soc__c" href="https://www.tiktok.com/@maxcar.automobile" target="_blank" rel="noopener">
+        <b>TikTok</b><span>@maxcar.automobile</span><em>385K харесвания · 27K последователи</em>
+      </a>
+      <a class="soc__c" href="https://www.instagram.com/maxcar.automobile/" target="_blank" rel="noopener">
+        <b>Instagram</b><span>@maxcar.automobile</span><em>Нови коли, обзори и доставки</em>
+      </a>
+      <a class="soc__c" href="https://www.facebook.com/maxcar.automobile" target="_blank" rel="noopener">
+        <b>Facebook</b><span>MaxCar - продажба и внос на автомобили</span><em>11K последователи · нови оферти всеки ден</em>
+      </a>
+      <a class="soc__c" href="https://maxcar.mobile.bg/" target="_blank" rel="noopener">
+        <b>mobile.bg</b><span>maxcar.mobile.bg</span><em>Всички обяви с пълни данни</em>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow">Контакти</p>
+      <h2>Ела да ги видиш</h2>
+    </div>
+    <ul class="contact contact--row">
+      <li><span>📍</span><div><b>Адрес</b>гр. Пловдив, бул. „Васил Левски“ 246</div></li>
+      <li><span>📞</span><div><b>Телефон</b><a href="tel:+359895555335">089 5555335</a></div></li>
+      <li><span>💬</span><div><b>Viber / WhatsApp</b><a href="https://wa.me/359895555335" target="_blank" rel="noopener">Пиши ни</a></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="gpoint" id="map">
+  <div class="wrap" style="padding:56px 0">
+    <div class="gpoint__box">
+      <div class="gpoint__txt">
+        <span class="pin">📍 MAXCAR в Google Maps</span>
+        <h2>Намери ни в Google</h2>
+        <p>гр. Пловдив, бул. „Васил Левски“ 246</p>
+        <a class="btn btn--red" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=%D0%B1%D1%83%D0%BB.+%D0%92%D0%B0%D1%81%D0%B8%D0%BB+%D0%9B%D0%B5%D0%B2%D1%81%D0%BA%D0%B8+246+%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2">Прокарай маршрут</a>
+        <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=MAXCAR+%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%8A%D1%89%D0%B0+%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2">Виж и оцени в Google</a>
+      </div>
+      <iframe class="map" title="MAXCAR на картата" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%D0%B1%D1%83%D0%BB.+%D0%92%D0%B0%D1%81%D0%B8%D0%BB+%D0%9B%D0%B5%D0%B2%D1%81%D0%BA%D0%B8+246+%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo logo--sm"><img src="assets/logo-white.png" alt="MAXCAR" width="900" height="140"></span>
+    <p>© <span id="yr"></span> MAXCAR · Автокъща Пловдив · Цените и наличностите са ориентировни, за актуална информация ни се обади.</p>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+359895555335" aria-label="Обади се">📞</a>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal__bg" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal__x" data-close aria-label="Затвори">×</button>
+    <div class="gal">
+      <div class="gal__main"><img id="gMain" alt=""><button class="gal__nav gal__nav--p" id="gPrev" aria-label="Предишна">‹</button><button class="gal__nav gal__nav--n" id="gNext" aria-label="Следваща">›</button></div>
+      <div class="gal__th" id="gTh"></div>
+    </div>
+    <div class="modal__info">
+      <p class="eyebrow" id="mMake"></p>
+      <h3 id="mTitle"></h3>
+      <p class="modal__price" id="mPrice"></p>
+      <dl class="spec" id="mSpec"></dl>
+      <div class="modal__cta">
+        <a class="btn btn--red" id="mCall" href="tel:+359895555335">📞 Обади се</a>
+        <a class="btn btn--ghost" id="mWa" target="_blank" rel="noopener" href="#">💬 WhatsApp</a>
+        <a class="btn btn--ghost" id="mLink" target="_blank" rel="noopener" href="#">Пълна обява ↗</a>
+      </div>
+      <p class="note">Първоначална вноска и условия за лизинг – по телефона.</p>
+    </div>
+  </div>
+</div>
+
+<script src="data.js?v=6"></script>
+<script src="app.js?v=6"></script>
+</body>
+</html>
