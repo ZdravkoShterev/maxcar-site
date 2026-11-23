@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Автомобили – MAXCAR Пловдив</title>
+<meta name="description" content="MAXCAR Пловдив: автомобили от Германия, Австрия, Дания и Чехия. Гаранция 6 месеца или 10 000 км, безплатно обслужване, безплатна доставка, лизинг. Тел. 089 5555335.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@1,100..125,700..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css?v=22">
+</head>
+<body data-page="cars">
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="logo" href="index.html" aria-label="MAXCAR"><img src="assets/logo-white.png" alt="MAXCAR" width="900" height="140"></a>
+    <nav class="nav__links" id="nav">
+      <a href="cars.html" class="on">Автомобили</a>
+      <a href="index.html#warranty">Гаранция</a>
+      <a href="index.html#leasing">Лизинг</a>
+      <a href="index.html#sell">Изкупуване</a>
+      <a href="index.html#faq">Въпроси</a>
+      <a href="index.html#about">За нас</a>
+      <a href="index.html#contact">Контакти</a>
+    </nav>
+    <a class="btn btn--red nav__cta" href="tel:+359895555335">📞 089 5555335</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="page">
+<div class="wrap">
+  <div class="sec__head">
+    <p class="eyebrow">Наличности</p>
+    <h1>Всички <em>автомобили</em></h1>
+  </div>
+  <div class="filters" id="filters">
+    <input id="q" type="search" placeholder="Търси марка или модел…" aria-label="Търсене">
+    <button type="button" class="btn btn--ghost btn--sm filters__toggle" id="fToggle" aria-expanded="false" aria-controls="filters">⚙ Филтри <span id="fCnt"></span></button>
+    <select class="adv" id="fMake" aria-label="Марка"><option value="">Всички марки</option></select>
+    <select class="adv" id="fFuel" aria-label="Гориво"><option value="">Гориво</option></select>
+    <select class="adv" id="fGear" aria-label="Скоростна кутия"><option value="">Скоростна кутия</option></select>
+    <select class="adv" id="fBody" aria-label="Купе"><option value="">Тип купе</option></select>
+    <select class="adv" id="fPrice" aria-label="Цена">
+      <option value="">Всяка цена</option>
+      <option value="10000">до 10 000 €</option>
+      <option value="20000">до 20 000 €</option>
+      <option value="30000">до 30 000 €</option>
+      <option value="50000">до 50 000 €</option>
+      <option value="999999">над 50 000 €</option>
+    </select>
+    <select class="adv" id="fYear" aria-label="Година">
+      <option value="">Всяка година</option>
+      <option value="2020">от 2020</option>
+      <option value="2016">от 2016</option>
+      <option value="2012">от 2012</option>
+      <option value="2008">от 2008</option>
+    </select>
+    <select class="adv" id="fKm" aria-label="Пробег">
+      <option value="">Всеки пробег</option>
+      <option value="100000">до 100 000 км</option>
+      <option value="150000">до 150 000 км</option>
+      <option value="200000">до 200 000 км</option>
+    </select>
+    <select id="fSort" aria-label="Подредба">
+      <option value="new">Най-нови обяви</option>
+      <option value="pa">Цена ↑</option>
+      <option value="pd">Цена ↓</option>
+      <option value="yd">Година ↓</option>
+      <option value="ka">Пробег ↑</option>
+    </select>
+    <label class="chk adv"><input type="checkbox" id="fFull"> <span>само FULL MAX</span></label>
+    <button class="btn btn--ghost btn--sm" id="fReset" type="button">Изчисти</button>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>Няма коли по тези критерии. Обади се на <a href="tel:+359895555335">089 5555335</a> – често имаме и такива, които още не са качени.</p>
+  <div class="panel ask">
+    <div><h3>Не намираш точната кола?</h3><p>Обади се и ни кажи какво търсиш. Често имаме автомобили, които още не са качени.</p></div>
+    <div class="hero__cta"><a class="btn btn--red" href="tel:+359895555335">📞 089 5555335</a><a class="btn btn--ghost" target="_blank" rel="noopener" href="https://wa.me/359895555335">💬 WhatsApp</a></div>
+  </div>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="logo logo--sm"><img src="assets/logo-white.png" alt="MAXCAR" width="900" height="140"></span>
+    <p>© <span id="yr"></span> MAXCAR · Автокъща Пловдив · Цените и наличностите са ориентировни, за актуална информация ни се обади.</p>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+359895555335" aria-label="Обади се">📞</a>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal__bg" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal__x" data-close aria-label="Затвори">×</button>
+    <div class="gal">
+      <div class="gal__main"><img id="gMain" alt=""><button class="gal__nav gal__nav--p" id="gPrev" aria-label="Предишна">‹</button><button class="gal__nav gal__nav--n" id="gNext" aria-label="Следваща">›</button></div>
+      <div class="gal__th" id="gTh"></div>
+    </div>
+    <div class="modal__info">
+      <p class="eyebrow" id="mMake"></p>
+      <h3 id="mTitle"></h3>
+      <p class="modal__price" id="mPrice"></p>
+      <dl class="spec" id="mSpec"></dl>
+      <div class="modal__cta">
+        <a class="btn btn--red" id="mCall" href="tel:+359895555335">📞 Обади се</a>
+        <a class="btn btn--ghost" id="mWa" target="_blank" rel="noopener" href="#">💬 WhatsApp</a>
+        <a class="btn btn--ghost" id="mLink" target="_blank" rel="noopener" href="#">Обява ↗</a>
+      </div>
+      <p class="note">Първоначална вноска и условия за лизинг – по телефона.</p>
+    </div>
+  </div>
+</div>
+
+<script src="data.js?v=6"></script>
+<script src="app.js?v=21"></script>
+</body>
+</html>

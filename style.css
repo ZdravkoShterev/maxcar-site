@@ -284,3 +284,54 @@ h2{font-size:clamp(1.7rem,3.8vw,2.8rem);line-height:1.05}
   .hero .stats li{min-width:190px;padding:14px 24px}
 }
 .stats li{background:#0a0a0b40!important;backdrop-filter:blur(3px)!important;border-color:#ffffff30!important}
+
+/* ---- v8: заключване на хоризонталния скрол + мобилни поправки ---- */
+html{overflow-x:hidden;overscroll-behavior-x:none;-webkit-text-size-adjust:100%}
+body{overflow-x:clip;max-width:100%;overscroll-behavior-x:none}
+.wrap>*,.big>*,.split>*,.gpoint__box>*,.modal__box>*{min-width:0}
+@media (max-width:860px){
+  .big,.split,.gpoint__box,.modal__box{grid-template-columns:minmax(0,1fr)!important}
+  .about__stats{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px}
+  .about__stats div{padding:12px 6px}
+  .about__stats b{font-size:1.5rem!important}
+  .about__stats span{font-size:.72rem;display:block;line-height:1.25}
+  h1,h2,h3,.lead,.eyebrow,p,li,summary,blockquote{overflow-wrap:anywhere}
+  .cards,.soc,.revs,.tiles{grid-template-columns:minmax(0,1fr)!important}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+
+/* ---- v9: мобилен UX ---- */
+.filters__toggle{display:none}
+@media (max-width:860px){
+  .sec{padding:48px 0}
+  .lead{font-size:1rem}
+  .btn{min-height:46px}
+  .trust__in{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;padding:14px 0;text-align:left;justify-content:stretch}
+  .trust__in span{font-size:.82rem}
+  .trust__in span:last-child{grid-column:1/-1}
+  /* филтри */
+  .filters{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+  .filters input[type=search]{grid-column:1/-1;flex:none}
+  .filters select{flex:none;width:100%}
+  .filters__toggle{display:inline-flex;min-height:46px}
+  .filters:not(.open) .adv{display:none}
+  .filters.open .chk.adv{grid-column:1/-1}
+  #fReset{grid-column:1/-1}
+  .filters:not(.open) #fReset{display:none}
+  /* избрани коли – плъзгане встрани */
+  #featGrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -16px;padding:4px 16px 14px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  #featGrid::-webkit-scrollbar{display:none}
+  #featGrid .car{flex:0 0 82%;scroll-snap-align:center}
+  /* прозорец с кола */
+  .modal{padding:0;align-items:flex-end}
+  .modal__box{max-height:94svh;border-radius:18px 18px 0 0;overscroll-behavior:contain}
+  .modal__info h3{font-size:1.25rem}
+  .modal__price{font-size:1.6rem}
+  .modal__cta{position:sticky;bottom:0;background:linear-gradient(0deg,var(--bg2) 75%,transparent);padding:14px 0 calc(14px + env(safe-area-inset-bottom));margin-top:4px;z-index:2;flex-wrap:nowrap}
+  .modal__cta .btn{flex:1;padding:12px 10px;font-size:.9rem}
+  .gal__th{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .gal__nav{width:38px;height:38px}
+  .fab{bottom:calc(16px + env(safe-area-inset-bottom))}
+}
+
+@media (max-width:860px){.modal__cta{gap:8px}.modal__cta .btn{padding:12px 6px;font-size:.85rem;white-space:nowrap;min-width:0}}

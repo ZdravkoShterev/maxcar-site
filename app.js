@@ -155,3 +155,39 @@
   $('#burger').onclick = () => nav.classList.toggle('open');
   nav.addEventListener('click', e => { if (e.target.tagName === 'A') nav.classList.remove('open'); });
 })();
+
+// ---- мобилен UX: бутон „Филтри“ и плъзгане на снимки ----
+(function () {
+  var f = document.getElementById('filters'), t = document.getElementById('fToggle');
+  if (f && t) {
+    var cnt = function () {
+      var n = 0;
+      f.querySelectorAll('select.adv').forEach(function (s) { if (s.value) n++; });
+      var c = document.getElementById('fFull'); if (c && c.checked) n++;
+      var q = document.getElementById('q'); if (q && q.value.trim()) n++;
+      document.getElementById('fCnt').textContent = n ? '(' + n + ')' : '';
+    };
+    t.addEventListener('click', function () { var o = f.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
+    f.addEventListener('input', cnt);
+    document.getElementById('fReset') && document.getElementById('fReset').addEventListener('click', function () { setTimeout(cnt, 0); });
+    cnt();
+    // при линк с ?make=… или ?body=… покажи филтрите
+    if (/[?&](make|body)=/.test(location.search)) { f.classList.add('open'); t.setAttribute('aria-expanded', true); }
+  }
+  var g = document.querySelector('.gal__main');
+  if (g) {
+    var x0 = null, y0 = null;
+    g.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+    g.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) document.getElementById(dx < 0 ? 'gNext' : 'gPrev').click();
+      x0 = null;
+    }, { passive: true });
+  }
+  // мобилното меню се затваря при допир извън него
+  document.addEventListener('click', function (e) {
+    var nav = document.getElementById('nav');
+    if (nav && nav.classList.contains('open') && !e.target.closest('#nav') && !e.target.closest('#burger')) nav.classList.remove('open');
+  });
+})();
