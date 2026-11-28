@@ -150,6 +150,9 @@
     if (e.key === 'ArrowRight') show(idx + 1);
   });
 
+  // директен линк към кола: cars.html?car=<id>
+  { const cid = new URLSearchParams(location.search).get('car'); if (cid && $('#modal')) open(cid); }
+
   // мобилно меню
   const nav = $('#nav');
   $('#burger').onclick = () => nav.classList.toggle('open');
